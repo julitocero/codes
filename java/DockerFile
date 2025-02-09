@@ -1,6 +1,6 @@
 FROM openjdk:11
 WORKDIR /app
-COPY src/ /app/src/
+COPY . /app
 RUN javac -d out src/*.java
 RUN jar cfe bubble_sort.jar Main -C out .
 CMD ["java", "-jar", "bubble_sort.jar"]
