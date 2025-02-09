@@ -2,4 +2,4 @@ FROM openjdk:17
 COPY . /app
 WORKDIR /app
 RUN javac src/Main.java
-CMD java ./bubble_sort.py
+CMD java ./bubble_sort.jar
