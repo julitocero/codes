@@ -1,4 +1,4 @@
 FROM ruby:3.2
 WORKDIR /app
-COPY ./
+COPY .  /app
 CMD ["ruby", "bubble_sort.rb"]
