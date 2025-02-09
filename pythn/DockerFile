@@ -1,4 +1,4 @@
 FROM python:3
 WORKDIR /app
-COPY . /app
+COPY pythn/bubble_sort.py /app/
 CMD ["python", "bubble_sort.py"]
