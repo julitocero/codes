@@ -1,5 +1,5 @@
 FROM gcc:latest
 WORKDIR /app
 COPY . /app
-RUN mkdir -p build && g++ -o build/bubble_sort src/main.cpp
+RUN mkdir -p build && g++ -o build/bubble_sort main.cpp
 CMD ["/app/build/bubble_sort"]
