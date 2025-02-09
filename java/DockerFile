@@ -1,5 +1,6 @@
 FROM openjdk:17
-COPY . /app
 WORKDIR /app
-RUN javac src/Main.java
-CMD java ./bubble_sort.jar
+COPY . /app
+RUN javac -d out src/Main.java && \ jar cfe bubble_sort.jar Main -C out .  
+CMD ["java", "-jar", "bubble_sort.jar"]
+
