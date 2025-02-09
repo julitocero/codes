@@ -1,6 +1,6 @@
 FROM openjdk:11
 WORKDIR /app
 COPY . /app
-CMD ["java", "-jar", "bubble_sort.java.jar"]
+CMD ["java", "-jar", "/app/bubble_sort.java.jar"]
  
 
