@@ -1,5 +1,4 @@
 FROM gcc:latest
-RUN apt update && apt install -y g++
 WORKDIR /app
 COPY . /app
 RUN g++ -o bubble_sort src/main.cpp
