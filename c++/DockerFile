@@ -1,5 +1,5 @@
 FROM alpine:latest
-RUN apk add --no-cache g++
+RUN apk add --no-cache g++ make
 WORKDIR /app
 COPY . /app
 RUN g++ -o bubble_sort src/main.cpp
