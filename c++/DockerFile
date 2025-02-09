@@ -1,6 +1,6 @@
-FROM ubuntu:latest
+FROM alpine:latest
+RUN apk add --no-cache g++
 WORKDIR /app
-RUN apt-get update && apt-get install -y g++
 COPY . /app
 RUN g++ -o bubble_sort src/main.cpp
 CMD ["/app/bubble_sort"]
