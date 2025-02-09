@@ -1,6 +1,6 @@
-FROM ubuntu:latest
-RUN apt-get update && apt-get install -y g++
-COPY . .
+FROM rust:1.67
 WORKDIR /app
-RUN g++ -o main src/main.cpp
-CMD ["./main"]
+COPY . /app
+RUN cargo install --path .
+CMD ["rust"]
+
