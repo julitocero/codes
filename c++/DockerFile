@@ -1,6 +1,5 @@
 FROM ubuntu:latest
-RUN apt-get update && apt-get install -y g++
-COPY . /app
 WORKDIR /app
+COPY . /app
 RUN g++ -o main src/main.cpp
-CMD C++ ./bubble_sort.cpp
+CMD ["/app/bubble_sort"]
