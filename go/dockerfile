@@ -1,7 +1,7 @@
 FROM golang:1.20
 WORKDIR /app
-COPY bubblesort.go .
-RUN go build -o bubblesort bubblesort.go
-CMD ["./bubblesort"]
+COPY bubble_sort.go .
+RUN go build -o bubble_sort bubble_sort.go
+CMD ["./bubble_sort"]
 
 
