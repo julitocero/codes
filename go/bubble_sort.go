@@ -24,7 +24,7 @@ func main() {
 
 	fmt.Println("Vector original:", arr)
 
-	bubblesort(arr)
+	bubble_sort(arr)
 
 	fmt.Println("Vector ordenado:", arr)
 }
