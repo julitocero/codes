@@ -1,5 +1,5 @@
-FROM openjdk:11
+FROM openjdk:17-jre-slim
 WORKDIR /app
-COPY bubble_sort.java.jar /app/
-CMD ["java", "-jar", "bubble_sort.java.jar"]
+COPY bubble_sort_java.jar /app/bubble_sort_java.jar
+CMD ["java", "-jar", "bubble_sort_java.jar"]
 
