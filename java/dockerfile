@@ -1,5 +1,5 @@
 FROM openjdk:17
 WORKDIR /app
-COPY bubble_sort_java.jar /app/
+COPY bubble_sort_java.jar 
 CMD ["java", "-jar", "bubble_sort_java.jar"]
 
