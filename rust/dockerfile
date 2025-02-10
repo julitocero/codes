@@ -1,5 +1,5 @@
 FROM rust:1.67
 WORKDIR /app
-COPY rust/bubble_sort.rs .
+COPY bubble_sort.rs /app
 RUN rustc bubble_sort.rs -o bubble_sort
 CMD ["./bubble_sort"]
