@@ -1,7 +1,5 @@
 FROM rust:1.67
 WORKDIR /app
-COPY Cargo.toml .
 COPY bubble_sort.rs .
-RUN cargo build --release --bin bubble_sort
-CMD ["./target/release/bubble_sort"]
-
+RUN rustc bubble_sort.rs -o bubble_sort
+CMD ["./bubble_sort"]
