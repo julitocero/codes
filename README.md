@@ -15,6 +15,7 @@
    docker run --privileged -it julitocero/cont:v1.0
 # codes
 Esta imagen contiene la lógica necesaria para recorrer el sistema de carpetas del repositorio y realizar el benchmark.
+---
 ¿Qué hace este contenedor?
 
 Recorre automáticamente las carpetas del repositorio.
